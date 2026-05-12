@@ -42,7 +42,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
-  package: xpkg.upbound.io/crossplane-contrib/function-patch-and-transform:v0.10.4
+  package: quay.io/amisstea/function-patch-and-transform:latest
   runtimeConfigRef:
     name: function-runtime-config
 
@@ -54,7 +54,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
-  package: xpkg.upbound.io/crossplane-contrib/function-go-templating:v0.12.0
+  package: quay.io/amisstea/function-go-templating:latest
   runtimeConfigRef:
     name: function-runtime-config
 
@@ -66,6 +66,6 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
-  package: xpkg.upbound.io/crossplane-contrib/function-auto-ready:v0.6.4
+  package: quay.io/amisstea/function-auto-ready:latest
   runtimeConfigRef:
     name: function-runtime-config
